@@ -15,7 +15,9 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--backgroundColor);
+background: linear-gradient(to top, rgba(255,255,255,1),  rgba(217,200,226,1) 55%);
+
+  
 }
 
 .gridContainer{
@@ -204,6 +206,10 @@ p, span {
 .boxContainer__2 i {
   font-size: 50px;
   color: #676077;
+  transition: all 1.5s;
+}
+.boxContainer__2 i:hover {
+ transform: rotate(360deg);
 }
 
 .boxContainer__2 p {
@@ -222,6 +228,10 @@ p, span {
 .boxContainer__4 i {
   font-size: 50px;
   color: #849bff;
+  transition: all 1.2s;
+}
+.boxContainer__4 i:hover {
+  transform: translate(20px);
 }
 
 .boxContainer__4 p {
@@ -307,10 +317,11 @@ width: 300px;
 
 .cardsContainer p {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin: 15px 0;
 }
 .cardsContainer div {
   padding: 10px;
+  transition: all 0.8s;
 }
 
 .cardsContainer img {
@@ -318,7 +329,12 @@ width: 300px;
   height: 250px;
 }
 
-/* Poyect */
+.cardsContainer div:hover  {
+  text-align: center;
+  transform: scale(1.1);
+}
+
+/* proyect */
 .cardsContainer_p {
   width: 98%;
   margin: 0 auto;
@@ -337,11 +353,18 @@ width: 300px;
   justify-content: center;
   align-items: center;
    margin: 30px 0; 
+   transition: all ease 0.8s;
 }
 
 .cardsContainer_p img {
+  margin-top: 10px;
   width: 220px;
   height: 135.5px;
+}
+
+.cardsContainer_p div:hover {
+  transform: scale(1.1);
+
 }
 
 .cardsContainer_p p{
