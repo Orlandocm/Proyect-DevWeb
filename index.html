@@ -9,54 +9,77 @@
   <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-  <link rel="Icon" href="./styles/icons/favicon-32x32.png">
+  <link rel="Icon" href="./assets/icons/favicon-32x32.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/Css/index.css">
+  <link rel="stylesheet" href="./Css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Css/styles.css">
   <title>Social Hacks 📱</title>
 </head>
 <body>
   <div class="gridContainer">
-  <header>
-    <nav class="containerMenu">
-        <img src="./styles/logo/SSH .png" alt="Logo">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="./Pages/proyectos.html">Proyectos</a></li>
-        <li><a href="./Pages/aboutus.html">Sobre Nosotros</a>
-          <ul> 
-            <li><a href="./Pages/servicios.html">Servicios</a></li>
-            <li> <a href="#">Opiniones</a> </li>
-          </ul>
-        </li>
-        <li><a href="./Pages/contactos.html">Contactos</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <nav class="navbar navbar-expand-lg navContainer">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./assets/logo/SSHP .png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./Pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/proyectos.html">Poyectos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./Pages/aboutus.html">Sobre Nosotros</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Opiniones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
   <main>
-    <div class="mainContainer">
-      <div class="backgroundImage"></div>
-      <section class="contents" >
-        <h2 data-aos="fade-up-right">Marketing Digital</h2>
+    <div>
+      <div class="text-center">
+        <img src="./assets/img/media-cottonbro.jpg" class="img-fluid" alt="Media">
+      </div>
+      <section class="contents">
+        <h2 >Marketing Digital</h2>
         <p>Marketing Digital es el conjunto de estrategias volcadas hacia la promoción de una marca en el internet. Se diferencia del marketing tradicional por incluir el uso de canales y métodos que permiten el análisis de los resultados en tiempo real.
         </p>
       </section>
-        <div class="cradsContainer_i">
-          <div class="boxContainer__1">
+        <div class="cardsArea">
+          <div class="cardIndex">
             <h3>RAZONES PARA CONFIAR EN NOSOTROS </h3>
             <p> QUEREMOS SER </p>  
             <p>TU AGENCIA DE </p>  
             <p>MARKETING DIGITAL</p>    
           </div>    
-            <div class="cradsContainer__2">
-              <div class="boxContainer__2">
-                <i class="fi fi-rr-star"></i>
+            <div class="cradsContainer">
+              <div class="cardIndex2">
+                <i class="fi fi-rr-star" data-aos="flip-left"></i>
                 <p>
                   Máxima calidad
                   en cada servicio
                 </p>
               </div>
-              <div class="boxContainer__4">
-                <i class="fi fi-rr-book-bookmark"></i>
+              <div class="cardIndex3">
+                <i class="fi fi-rr-book-bookmark" data-aos="flip-right"></i>
                 <p>Precios sin competencia</p>
               </div> 
             </div>
@@ -68,26 +91,24 @@
       <div class="line"></div>
       <h3>TRABAJAMOS EN TODO EL MUNDO</h3>
     </section>
-    <section>
-      <div class="contents_2">
-        <img data-aos="flip-left" src="./styles/Imagenes/home_developer3_investment5.png" alt="">
-      <div>
-        <div data-aos="fade-left">
-          <h3>AGENCIA INTERNACIONAL</h3>
-          <span>Sede En Argentina</span>
-          <p>Podemos presumir de tener clientes satisfechos en todas partes del mundo</p>
+      <section class="contents_2">
+          <img class="world" data-aos="flip-up" src="./assets/img/home_developer3_investment5.png" alt="">
+            <div class="text1">
+           <h5>AGENCIA INTERNACIONAL</h5>
+          <h4>Sede En Argentina</h4>
+          <p>Podemos presumir de tener clientes satisfechos en todas partes del mundo</p> 
         </div>
-        <div data-aos="fade-left">
-          <h3>100% ONLINE</h3>
-          <span>Enfocados a resultados</span>
+        <div class="text2" >
+          <h2>100% ONLINE</h2>
+          <h4>Enfocados a resultados</h4>
           <p>Al ser una empresa 100% online podemos optimizar todos los procesos, apostando por la máxima calidad al mejor precio</p>
         </div>
-      </div>
-      </div>
+          
+      </section>
     </div>
   </main>
   <footer class="containerFooter">
-    <p>Copyright © 2022</p> 
+    <span>Copyright © 2022</span>
     <section>
       <a href="#"><i class="fi fi-brands-facebook"></i></a>
       <a href="https://www.instagram.com/soysocialhacks/" target="_blank"><i class="fi fi-brands-instagram"></i></a>  
@@ -98,5 +119,6 @@
   <script>
     AOS.init();
   </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

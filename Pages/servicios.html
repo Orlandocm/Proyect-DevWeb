@@ -8,62 +8,106 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-  <link rel="Icon" href="../styles/icons/favicon-32x32.png">
+  <link rel="Icon" href="../assets/icons/favicon-32x32.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/Css/index.css">
+  <link rel="stylesheet" href="../Css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Css/styles.css">
   <title>Servicios</title>
 </head>
 <body>
   <div class="gridContainer">
-  <header>
-    <nav class="containerMenu">
-      <img src="../styles/logo/SSH .png" alt="Logo">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="aboutus.html">Sobre Nosotros</a>
-          <ul> 
-            <li><a href="servicios.html">Servicios</a></li>
-            <li> <a href="#">Opiniones</a> </li>
-          </ul>
-        </li>
-        <li><a href="contactos.html">Contactos</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <nav class="navbar navbar-expand-lg navContainer">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/logo/SSHP .png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./proyectos.html">Poyectos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./aboutus.html">Sobre Nosotros</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Opiniones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
  <main>
-  <div class="backgroundImage"></div>
+  <div class="text-center">
+    <img src="../assets/img/media-cottonbro.jpg" class="img-fluid" alt="Media">
+  </div>
   <section class="servicesContainer">
     <div class="contents">
-      <h2 data-aos="fade-up-right">Servicios</h2>
+      <h2>Servicios</h2>
     </div>
-    <div class="cardsContainer">
-      <div class="card_1">
-        <p>SEO</p>
-        <img src="../styles/Imagenes/Redes.jpg" alt="">
-      </div>
-      <div class="card_2">
-        <p>PUBLICIDAD</p>
-        <img src="../styles/Imagenes/Logos.jpg" alt="">
-      </div>
-      <div class="card_3">
-        <p>DISEÑO WEB</p>
-        <img src="../styles/Imagenes/web.jpg" alt="">
+    <div class="container">
+      <div class="row servicesCard">
+        <div class="card mx-auto mb-5 servicesAnimated" style="width: 18rem;">
+          <img src="../assets/img/Redes.jpg" class="card-img-top mt-2" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SEO</h5>
+            <a href="#" class="btn servicesButton">Conoce Mas</a>
+          </div>
+        </div>
+        <div class="card mx-auto mb-5 servicesAnimated" style="width: 18rem;">
+          <img src="../assets/img/Logos.jpg" class="card-img-top mt-2" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PUBLICIDAD</h5>
+            <a href="#" class="btn servicesButton">Conoce Mas</a>
+          </div>
+        </div>
+        <div class="card mx-auto mb-5 servicesAnimated" style="width: 18rem;">
+          <img src="../assets/img/web.jpg" class="card-img-top mt-2" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DISENÑO WEB</h5>
+            <a href="#" class="btn servicesButton">Conoce Mas</a>
+          </div>
+        </div>
+        <div class="card mx-auto mb-5 servicesAnimated" style="width: 18rem;">
+          <img src="../assets/img/story.jpg" class="card-img-top mt-2" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">STORYTELLING</h5>
+            <a href="#" class="btn servicesButton">Conoce Mas</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="videoContainer">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bJjWIubOCTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container containerVideo">
+      <div class="row mx-auto mb-5">
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/bJjWIubOCTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
  </main>
  <footer class="containerFooter">
-  <p>Copyright © 2022</p> 
+  <span>Copyright © 2022</span> 
   <section>
     <a href="#"><i class="fi fi-brands-facebook"></i></a>
     <a href="https://www.instagram.com/soysocialhacks/" target="_blank"><i class="fi fi-brands-instagram"></i></a>  
   </section> 
 </footer>
 </div>
+<script src="../js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
    AOS.init();

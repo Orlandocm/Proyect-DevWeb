@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Courgette", cursive;
+  color: #676077; }
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr auto;
+  grid-template-areas: "header " "main " "footer";
+  min-height: 100vh; }
+
+.navContainer {
+  background-color: #cff8be;
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  font-family: 1.3rem; }
+  .navContainer a {
+    color: #849bff; }
+  .navContainer a:hover {
+    color: #676077; }
+
+.containerFooter {
+  width: 100%;
+  height: 50px;
+  background-color: #cff8be;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center; }
+  .containerFooter span {
+    font-family: "Berkshire Swash", cursive;
+    color: #676077;
+    margin-left: 20px; }
+  .containerFooter i {
+    font-size: 1.6rem;
+    margin-right: 20px; }
+  .containerFooter a {
+    text-decoration: none;
+    color: #849bff; }
+  .containerFooter a:hover {
+    color: #676077; }
+
+.contents {
+  max-width: 500px;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  height: 200px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .contents {
+      max-width: 600px;
+      font-size: 1.2rem; } }
+  @media screen and (min-width: 992px) {
+    .contents {
+      text-align: left;
+      margin: 3rem 0 0 20px; }
+      .contents p {
+        margin-left: 20px;
+        z-index: 1; } }
+
+.cardsArea {
+  max-width: 575px;
+  width: 98%;
+  margin: 0 auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 300px 600px;
+  grid-template-areas: "card" "card1";
+  justify-content: center; }
+  @media screen and (min-width: 768px) {
+    .cardsArea {
+      max-width: 675px;
+      grid-template-columns: 450px; } }
+  @media screen and (min-width: 992px) {
+    .cardsArea {
+      margin-top: 50px;
+      max-width: 990px;
+      grid-template-columns: 600px,450px;
+      grid-template-rows: 400px;
+      grid-template-areas: "card card1"; } }
+  .cardsArea .cardIndex {
+    max-width: 350px;
+    height: 280px;
+    background-color: #849bff;
+    grid-area: card;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: space-between; }
+    .cardsArea .cardIndex h3 {
+      padding: 0 0 20px 10px; }
+    .cardsArea .cardIndex p {
+      padding-left: 20px;
+      line-height: 0px; }
+    @media screen and (min-width: 768px) {
+      .cardsArea .cardIndex {
+        max-width: 450px; }
+        .cardsArea .cardIndex h3 {
+          padding-left: 40px; }
+        .cardsArea .cardIndex p {
+          font-size: 1.4rem;
+          line-height: 4px; } }
+    @media screen and (min-width: 992px) {
+      .cardsArea .cardIndex {
+        max-width: 600px;
+        height: 400px; } }
+  .cardsArea .cradsContainer {
+    max-width: 350px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repear(2, 1fr);
+    grid-template-areas: "card_1" "card_2";
+    row-gap: 1rem;
+    grid-area: card1; }
+    @media screen and (min-width: 768px) {
+      .cardsArea .cradsContainer {
+        max-width: 400px;
+        width: 99%;
+        margin: 0 auto; } }
+    @media screen and (min-width: 992px) {
+      .cardsArea .cradsContainer {
+        max-width: 600px;
+        grid-template-columns: 600px,3300px;
+        row-gap: 0rem; } }
+    .cardsArea .cradsContainer .cardIndex2 {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4bb42;
+      grid-area: card_1;
+      border-radius: 8px; }
+      .cardsArea .cradsContainer .cardIndex2 i {
+        font-size: 4rem;
+        color: #cff8be; }
+      @media screen and (min-width: 768px) {
+        .cardsArea .cradsContainer .cardIndex2 p {
+          font-size: 1.2rem; } }
+      @media screen and (min-width: 992px) {
+        .cardsArea .cradsContainer .cardIndex2 {
+          width: 300px;
+          height: 200px;
+          grid-template-rows: repeat(2, 300px); } }
+    .cardsArea .cradsContainer .cardIndex3 {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #cff8be;
+      grid-area: card_2;
+      border-radius: 8px; }
+      .cardsArea .cradsContainer .cardIndex3 i {
+        font-size: 4rem;
+        color: #676077; }
+      @media screen and (min-width: 768px) {
+        .cardsArea .cradsContainer .cardIndex3 p {
+          font-size: 1.2rem; } }
+      @media screen and (min-width: 992px) {
+        .cardsArea .cradsContainer .cardIndex3 {
+          width: 300px;
+          height: 200px;
+          grid-template-rows: repeat(2, 300px); } }
+
+.contents_1 {
+  max-width: 500px;
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px; }
+  @media screen and (min-width: 768px) {
+    .contents_1 {
+      max-width: 600px;
+      font-size: 1.2rem; } }
+  @media screen and (min-width: 992px) {
+    .contents_1 {
+      max-width: 990px; } }
+
+.line {
+  max-width: 500px;
+  width: 95%;
+  margin: 0 auto;
+  margin: 30px auto;
+  border-top: 2px solid #676077; }
+  @media screen and (min-width: 768px) {
+    .line {
+      max-width: 600px; } }
+  @media screen and (min-width: 992px) {
+    .line {
+      max-width: 1000px; } }
+
+.contents_2 {
+  max-width: 500px;
+  width: 98%;
+  margin: 0 auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: 310px 170px 170px;
+  grid-template-areas: "img" "text1" "text2";
+  row-gap: 5px;
+  justify-content: center;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .contents_2 {
+      max-width: 600px;
+      grid-template-columns: 500px;
+      grid-template-rows: 430px 170px 170px;
+      grid-template-areas: "img" "text1" "text2"; } }
+  @media screen and (min-width: 992px) {
+    .contents_2 {
+      max-width: 990px;
+      grid-template-columns: 650px 250px;
+      grid-template-rows: repeat(2, 280px);
+      grid-template-areas: "img text1" "img text2";
+      margin-top: 40px; } }
+  .contents_2 .world {
+    max-width: 340px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    grid-area: img; }
+    @media screen and (min-width: 768px) {
+      .contents_2 .world {
+        max-width: 500px; } }
+    @media screen and (min-width: 992px) {
+      .contents_2 .world {
+        max-width: 650px;
+        height: 500px; } }
+  .contents_2 .text1 {
+    max-width: 500px;
+    grid-area: text1; }
+    @media screen and (min-width: 768px) {
+      .contents_2 .text1 {
+        max-width: 600px;
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 990px) {
+      .contents_2 .text1 {
+        height: 300px;
+        margin-top: 40px; } }
+  .contents_2 .text2 {
+    max-width: 500px;
+    grid-area: text2; }
+    @media screen and (min-width: 768px) {
+      .contents_2 .text2 {
+        max-width: 600px;
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 990px) {
+      .contents_2 .text2 {
+        height: 300px; } }
+
+.cardsProyects .proyectButton {
+  background-color: #cff8be;
+  color: #676077;
+  font-weight: bold;
+  font-family: "Courgette", cursive;
+  border: 1px solid #d9c8e2; }
+
+.cardsProyects .proyectButton:hover {
+  background-color: #849bff;
+  color: #cff8be; }
+
+.cardsProyects .animation {
+  transition: all ease .5s; }
+
+.cardsProyects .animation:hover {
+  transform: translatex(20px); }
+
+.cardsAreaAbout {
+  display: grid;
+  max-width: 575px;
+  width: 98%;
+  margin: 0 auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: repeat(3, 350px);
+  grid-template-areas: "card" "card1" "card2";
+  justify-content: center;
+  row-gap: 2rem; }
+  @media screen and (min-width: 768px) {
+    .cardsAreaAbout {
+      grid-template-columns: 450px;
+      grid-template-rows: repeat(3, 400px); } }
+  @media screen and (min-width: 992px) {
+    .cardsAreaAbout {
+      max-width: 900px;
+      grid-template-columns: repeat(2, 450px);
+      grid-template-rows: repeat(2, 400px);
+      grid-template-areas: "card card1" "card2 none";
+      row-gap: 0rem; } }
+  .cardsAreaAbout .cardAbout {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .cardsAreaAbout .cardAbout p {
+      padding: 10px; }
+    .cardsAreaAbout .cardAbout i {
+      font-size: 4rem; }
+  .cardsAreaAbout .cardAbout_1 {
+    background-color: #f4bb42;
+    border-radius: 8px; }
+    .cardsAreaAbout .cardAbout_1 i {
+      color: #cff8be; }
+    @media screen and (min-width: 768px) {
+      .cardsAreaAbout .cardAbout_1 p {
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 992px) {
+      .cardsAreaAbout .cardAbout_1 {
+        grid-area: card; } }
+  .cardsAreaAbout .cardAbout_2 {
+    background-color: #cff8be;
+    border-radius: 8px; }
+    .cardsAreaAbout .cardAbout_2 i {
+      color: #676077; }
+    @media screen and (min-width: 768px) {
+      .cardsAreaAbout .cardAbout_2 p {
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 992px) {
+      .cardsAreaAbout .cardAbout_2 {
+        grid-area: card1; } }
+  .cardsAreaAbout .cardAbout_3 {
+    background-color: #849bff;
+    border-radius: 8px; }
+    .cardsAreaAbout .cardAbout_3 i {
+      font-size: 4rem;
+      color: #ffffff; }
+    @media screen and (min-width: 768px) {
+      .cardsAreaAbout .cardAbout_3 p {
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 992px) {
+      .cardsAreaAbout .cardAbout_3 {
+        grid-area: card2; } }
+
+.formContainer label {
+  font-family: "Berkshire Swash", cursive;
+  color: #676077; }
+
+.servicesCard .servicesButton {
+  transform: translate(50px, 35px);
+  background-color: #cff8be;
+  color: #676077;
+  font-weight: bold;
+  font-family: "Courgette", cursive;
+  border: 1px solid #d9c8e2; }
+
+.servicesCard .servicesButton:hover {
+  background-color: #849bff;
+  color: #cff8be; }
+
+.servicesCard .servicesAnimated {
+  transition: all ease .5s; }
+
+.servicesCard .servicesAnimated:hover {
+  transform: scale(1.1); }
+
+.containerVideo {
+  display: none; }
+  @media screen and (min-width: 576px) {
+    .containerVideo {
+      display: block; } }
+  @media screen and (min-width: 992px) {
+    .containerVideo {
+      width: 50%; } }

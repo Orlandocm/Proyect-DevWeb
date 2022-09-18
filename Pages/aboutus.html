@@ -11,83 +11,107 @@
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
   <link rel="Icon" href="../styles/icons/android-chrome-192x192.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/Css/index.css">
+  <link rel="stylesheet" href="../Css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Css/styles.css">
   <title>Contactos</title>
 </head>
 <body>
   <div class="gridContainer">
-  <header>
-    <nav class="containerMenu">
-      <img src="../styles/logo/SSH .png" alt="Logo">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./proyectos.html">Proyectos</a></li>
-        <li><a href="aboutus.html">Sobre Nosotros</a>
-          <ul> 
-            <li><a href="servicios.html">Servicios</a></li>
-            <li> <a href="#">Opiniones</a> </li>
-          </ul>
-        </li>
-        <li><a href="contactos.html">Contactos</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <nav class="navbar navbar-expand-lg navContainer">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/logo/SSHP .png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./proyectos.html">Poyectos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./aboutus.html">Sobre Nosotros</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Opiniones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
  <main>
-  <div class="backgroundImage"></div>
+  <div class="text-center">
+    <img src="../assets/img/media-cottonbro.jpg" class="img-fluid" alt="Media">
+  </div>
   <section class="servicesContainer">
     <div class="contents">
-      <h2 data-aos="fade-up-right">About US</h2>
+      <h2>About US</h2>
       <p>Queremos ser tu agencia de marketin Digital</p>
     </div>
-      <section class="cradsContainer_a">
-          <div class="boxContainer_2">
-            <i class="fi fi-rr-star"></i>
-            <p>
-              Sabemos lo que necesitas
-            </p>
-            <span>Incrementar tu tráfico, incrementar tus conversiones y mejorar con tus clientes</span>
+      <section class="cardsAreaAbout">
+          <div class="cardAbout cardAbout_1 ">
+            <i class="fi fi-rr-star" data-aos="zoom-in-right"></i>
+            <h5>Sabemos lo que necesitas</h5>
+            <p>Incrementar tu tráfico, incrementar tus conversiones y mejorar con tus clientes</p>
           </div>
-          <div class="boxContainer_3">
-            <!-- <i class="fi fi-rr-edit"></i> -->
-            <p>Somos solucionadores de problemas.</p>
-            <span>Nuestra prioridad es encontrar la mejor solución. Buscamos la pieza que falta del rompecabezas para desarrollar campañas que realmente tengan impacto.</span>
+          <div class="cardAbout cardAbout_2">
+            <i class="fi fi-rr-edit" data-aos="zoom-in-left"></i>
+            <h5>Somos solucionadores de problemas.</h5>
+            <p>Nuestra prioridad es encontrar la mejor solución. Buscamos la pieza que falta del rompecabezas para desarrollar campañas que realmente tengan impacto.</p>
           </div>
-          <div class="boxContainer_4">
-            <i class="fi fi-rr-book-bookmark"></i>
-            <p>Somos creadores.</p>
-            <span>En SocialHacks nos gusta ensuciarnos las manos. Creamos ideas y experiencias. Y lo hacemos todo internamente, de principio a fin.</span>
+          <div class="cardAbout cardAbout_3">
+            <i class="fi fi-rr-book-bookmark" data-aos="flip-down"></i>
+            <h5>Somos creadores.</h5>
+            <p>En SocialHacks nos gusta ensuciarnos las manos. Creamos ideas y experiencias. Y lo hacemos todo internamente, de principio a fin.</p>
           </div>
+          <!-- <div class="cardAbout_4">
+          </div> -->
       </section>
-      <div class="contents">
+      <div class="contents mx-auto">
         <h2>Ofrecemos</h2>
-        <table border="1" cellpadding="10px" cellspacing="5px">
-          <tr >
-              <th>Publicidad</th>
-              <th>Diseño</th>
-              <th>Gestion</th>
-            </tr>
-            <tr>
-              <td>Instragram</td>
-              <td>Web</td>
-              <td>redes</td>
-            </tr>
-            <tr>
-              <td>Facebook</td>
-              <td>Logo</td>
-              <td>Web</td>
-            </tr>
-        </table>
+          <table class="table table-dark table-hover border border-darck border-2 mx-auto">
+            <tr >
+                <th>Publicidad</th>
+                <th>Diseño</th>
+                <th>Gestion</th>
+              </tr>
+              <tr>
+                <td>Instragram</td>
+                <td>Web</td>
+                <td>redes</td>
+              </tr>
+              <tr>
+                <td>Facebook</td>
+                <td>Logo</td>
+                <td>Web</td>
+              </tr>
+          </table>
       </div>
   </section>
  </main>
  <footer class="containerFooter">
-  <p>Copyright © 2022</p> 
+  <span>Copyright © 2022</span> 
   <section>
     <a href="#"><i class="fi fi-brands-facebook"></i></a>
     <a href="https://www.instagram.com/soysocialhacks/" target="_blank"><i class="fi fi-brands-instagram"></i></a>  
   </section> 
 </footer>
 </div>
+<script src="../js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();

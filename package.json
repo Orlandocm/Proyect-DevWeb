@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.19"
+  },
+  "name": "proyecto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orlandocm/Proyect-DevWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Orlandocm/Proyect-DevWeb/issues"
+  },
+  "homepage": "https://github.com/Orlandocm/Proyect-DevWeb#readme",
+  "description": ""
+}

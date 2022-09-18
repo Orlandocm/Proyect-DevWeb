@@ -8,62 +8,91 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-  <link rel="Icon" href="../styles/icons/favicon-32x32.png">
+  <link rel="Icon" href="../assets/icons/favicon-32x32.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/Css/index.css">
+  <link rel="stylesheet" href="../Css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Css/styles.css">
   <title>Contactos</title>
 </head>
 <body>
   <div class="gridContainer">
-  <header>
-    <nav class="containerMenu">
-      <img src="../styles/logo/SSH .png" alt="Logo">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="aboutus.html">Sobre Nosotros</a>
-          <ul> 
-            <li><a href="servicios.html">Servicios</a></li>
-            <li> <a href="#">Opiniones</a> </li>
-          </ul>
-        </li>
-        <li><a href="contactos.html">Contactos</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <nav class="navbar navbar-expand-lg navContainer">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/logo/SSHP .png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./proyectos.html">Poyectos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./aboutus.html">Sobre Nosotros</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Opiniones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
   <main>
-    <div class="backgroundImage"></div>
+    <div class="text-center">
+      <img src="../assets/img/contact.jpg" class="img-fluid" alt="contacts">
+    </div>
     <section class="contents">
-      <h2 data-aos="fade-up-right">Contactos</h2>
+      <h2>Contactos</h2>
     </section>
-    <section class="form">
-      <form action="Contacto" method="get">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-        <br><br>
-        <label for="asunto">asunto</label>
-        <input type="text" id="asunto" name="asunto">
-        <label for="telefono">Telefono</label>
-        <input type="text" id="telefono" name="telefono">
-        <br>
-        <label for="observacion">observacion</label>
-        <br>
-        <textarea name="observacion" id="observacion" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Enviar">
-      </form>
-    </section>
+    <div class="formContainer">
+    <form class="mx-auto w-50" action="Contacto" method="get">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+        <input type="number" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Asunto"></textarea>
+      </div>
+    </form>
+  </div>
   </main>
   <footer class="containerFooter">
-    <p>Copyright © 2022</p> 
+    <span>Copyright © 2022</span> 
     <section>
       <a href="#"><i class="fi fi-brands-facebook"></i></a>
       <a href="https://www.instagram.com/soysocialhacks/" target="_blank"><i class="fi fi-brands-instagram"></i></a>  
     </section> 
   </footer>
 </div>
+<script src="../js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
