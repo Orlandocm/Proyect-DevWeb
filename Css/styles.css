@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr auto;
-  grid-template-areas: "header " "main " "footer";
+  grid-template-areas: "header " "main" "footer";
   min-height: 100vh; }
 
 .navContainer {
@@ -21,8 +21,8 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: 1.3rem; }
   .navContainer a {
     color: #849bff; }
-  .navContainer a:hover {
-    color: #676077; }
+    .navContainer a:hover {
+      color: #676077; }
 
 .containerFooter {
   width: 100%;
@@ -42,8 +42,8 @@ h1, h2, h3, h4, h5, h6, p {
   .containerFooter a {
     text-decoration: none;
     color: #849bff; }
-  .containerFooter a:hover {
-    color: #676077; }
+    .containerFooter a:hover {
+      color: #676077; }
 
 .contents {
   max-width: 500px;
@@ -263,16 +263,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: bold;
   font-family: "Courgette", cursive;
   border: 1px solid #d9c8e2; }
-
-.cardsProyects .proyectButton:hover {
-  background-color: #849bff;
-  color: #cff8be; }
+  .cardsProyects .proyectButton:hover {
+    background-color: #849bff;
+    color: #cff8be; }
 
 .cardsProyects .animation {
   transition: all ease .5s; }
-
-.cardsProyects .animation:hover {
-  transform: translatex(20px); }
+  .cardsProyects .animation:hover {
+    transform: translatex(20px); }
 
 .cardsAreaAbout {
   display: grid;
@@ -353,16 +351,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: bold;
   font-family: "Courgette", cursive;
   border: 1px solid #d9c8e2; }
-
-.servicesCard .servicesButton:hover {
-  background-color: #849bff;
-  color: #cff8be; }
+  .servicesCard .servicesButton:hover {
+    background-color: #849bff;
+    color: #cff8be; }
 
 .servicesCard .servicesAnimated {
   transition: all ease .5s; }
-
-.servicesCard .servicesAnimated:hover {
-  transform: scale(1.1); }
+  .servicesCard .servicesAnimated:hover {
+    transform: scale(1.1); }
 
 .containerVideo {
   display: none; }
