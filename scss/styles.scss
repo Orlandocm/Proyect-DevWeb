@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 h1,h2,h3,h4,h5,h6,p {
   font-family: $fontTitle;
   color: $lettersColor;
@@ -72,16 +71,15 @@ h1,h2,h3,h4,h5,h6,p {
   margin-top: 2.5rem;
   height: 200px;
   text-align: center;
-  @include responsive(768px){
+  @include responsive(map-get($media, tablet)){
     max-width: 600px;
     font-size: 1.2rem;
   }
-  @include responsive(992px){
+  @include responsive(map-get($media, desktop)){
     text-align: left;
     margin: 3rem 0 0 20px;
     p{
       margin-left: 20px;
-      z-index: 1;
     }
   }
 }
@@ -99,11 +97,11 @@ h1,h2,h3,h4,h5,h6,p {
   "card1";
   justify-content: center;
 
-  @include responsive(768px){
+  @include responsive(map-get($media, tablet)){
     max-width: 675px;
     grid-template-columns: 450px;
   }
-  @include responsive(992px){
+  @include responsive(map-get($media, desktop)){
     margin-top: 50px;
     max-width: 990px;
     grid-template-columns: 600px,450px;
@@ -128,7 +126,7 @@ h1,h2,h3,h4,h5,h6,p {
       line-height: 0px;
     }
 
-    @include responsive(768px){
+    @include responsive(map-get($media, tablet)){
       max-width: 450px;
 
       h3{
@@ -139,7 +137,7 @@ h1,h2,h3,h4,h5,h6,p {
         line-height: 4px;
       }
     }
-    @include responsive(992px){
+    @include responsive(map-get($media, desktop)){
       max-width: 600px;
       height: 400px    
     }
@@ -156,12 +154,12 @@ h1,h2,h3,h4,h5,h6,p {
       "card_2";
     row-gap: 1rem;
     grid-area: card1;
-    @include responsive(768px){
+    @include responsive(map-get($media, tablet)){
       max-width: 400px; 
       width: 99%;
       margin: 0 auto;
     }
-    @include responsive(992px){
+    @include responsive(map-get($media, desktop)){
       max-width: 600px;
       grid-template-columns: 600px,3300px;
       row-gap: 0rem;
@@ -177,12 +175,12 @@ h1,h2,h3,h4,h5,h6,p {
         font-size: 4rem;
         color:$backGround
       }
-      @include responsive(768px){
+      @include responsive(map-get($media, tablet)){
         p{
           font-size: 1.2rem
         }
       }
-      @include responsive(992px){
+      @include responsive(map-get($media, desktop)){
         width: 300px;
         height: 200px;
         grid-template-rows: repeat(2,300px);
@@ -199,12 +197,12 @@ h1,h2,h3,h4,h5,h6,p {
         font-size: 4rem;
         color: $lettersColor;
       }
-      @include responsive(768px){
+      @include responsive(map-get($media, tablet)){
         p{
           font-size: 1.2rem
         }
       }
-      @include responsive(992px){
+      @include responsive(map-get($media, desktop)){
         width: 300px;
         height: 200px;
         grid-template-rows: repeat(2,300px);
@@ -219,11 +217,11 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0 auto;
   text-align: center;
   margin-top: 30px;
-  @include responsive(768px){
+  @include responsive(map-get($media, tablet)){
     max-width: 600px;
     font-size: 1.2rem;
   }
-  @include responsive(992px){
+  @include responsive(map-get($media, desktop)){
     max-width: 990px;  
   }
 }
@@ -234,10 +232,10 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 30px auto ;
   border-top: 2px solid $lettersColor;
 
-  @include responsive(768px){
+  @include responsive(map-get($media, tablet)){
     max-width: 600px;
   }
-  @include responsive(992px){
+  @include responsive(map-get($media, desktop)){
     max-width: 1000px;  
   }
 }
@@ -257,7 +255,7 @@ h1,h2,h3,h4,h5,h6,p {
   justify-content: center;
   text-align: center;
 
-  @include responsive(768px){
+  @include responsive(map-get($media, tablet)){
     max-width: 600px;
     grid-template-columns: 500px;
     grid-template-rows: 430px 170px 170px;
@@ -266,7 +264,7 @@ h1,h2,h3,h4,h5,h6,p {
     "text1"
     "text2";
   }
-  @include responsive(992px){
+  @include responsive(map-get($media, desktop)){
     max-width: 990px;
     grid-template-columns: 650px 250px;
     grid-template-rows: repeat(2,280px);
@@ -281,10 +279,10 @@ h1,h2,h3,h4,h5,h6,p {
     margin: 0 auto;
     margin-top: 20px;
     grid-area: img;
-    @include responsive(768px) {
+    @include responsive(map-get($media, tablet)) {
       max-width: 500px;
     }
-    @include responsive(992px) {
+    @include responsive(map-get($media, desktop)) {
       max-width: 650px;
       height: 500px;
     }
@@ -293,11 +291,11 @@ h1,h2,h3,h4,h5,h6,p {
     max-width: 500px;
     grid-area: text1;
 
-    @include responsive(768px){
+    @include responsive(map-get($media, tablet)){
       max-width: 600px;
       font-size: 1.2rem;
     }
-    @include responsive(990px) {
+    @include responsive(map-get($media, desktop)) {
       height: 300px;
       margin-top: 40px;
     }
@@ -306,11 +304,11 @@ h1,h2,h3,h4,h5,h6,p {
     max-width: 500px;
     grid-area: text2;
 
-    @include responsive(768px){
+    @include responsive(map-get($media, tablet)){
       max-width: 600px;
       font-size: 1.2rem;
     }
-    @include responsive(990px) {
+    @include responsive(map-get($media, desktop)) {
       height: 300px;
     }
   }
@@ -324,6 +322,8 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: bold;
     font-family: $fontTitle;
     border: 1px solid $backgroundColor;
+  }
+  .hoverRepeat{
     &:hover{
       background-color:$first-Color;
       color: $backGround;
@@ -355,11 +355,11 @@ h1,h2,h3,h4,h5,h6,p {
   "card2";
   justify-content: center;
   row-gap: 2rem;
-  @include responsive(768px){
+  @include responsive(map-get($media, tablet)){
     grid-template-columns: 450px;
     grid-template-rows: repeat(3,400px);
   }
-  @include responsive(992px){
+  @include responsive(map-get($media, desktop)){
     max-width: 900px;
     grid-template-columns: repeat(2,450px);
     grid-template-rows: repeat(2,400px);
@@ -385,12 +385,12 @@ h1,h2,h3,h4,h5,h6,p {
     i{
       color: $backGround;
     }
-    @include responsive(768px){
+    @include responsive(map-get($media, tablet)){
       p{
         font-size: 1.2rem
       }
     }
-    @include responsive(992px){
+    @include responsive(map-get($media, desktop)){
       grid-area: card;
     }
   }
@@ -400,12 +400,12 @@ h1,h2,h3,h4,h5,h6,p {
     i{
       color: $lettersColor;
     }
-    @include responsive(768px){
+    @include responsive(map-get($media, tablet)){
       p{
         font-size: 1.2rem
       }
     }
-    @include responsive(992px){
+    @include responsive(map-get($media, desktop)){
       grid-area: card1;
     }
   }
@@ -416,12 +416,12 @@ h1,h2,h3,h4,h5,h6,p {
       font-size: 4rem;
       color: $complementColor;
     }
-    @include responsive(768px){
+    @include responsive(map-get($media, tablet)){
       p{
         font-size: 1.2rem
       }
     }
-    @include responsive(992px){
+    @include responsive(map-get($media, desktop)){
       grid-area: card2;
     }
   }
@@ -444,11 +444,8 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: bold;
     font-family: $fontTitle;
     border: 1px solid $backgroundColor;
-    &:hover{
-      background-color: $first-Color;
-      color: $backGround;
-    }
   }
+  @extend .hoverRepeat;
   
   .servicesAnimated{
     transition: all ease .5s;
@@ -460,10 +457,10 @@ h1,h2,h3,h4,h5,h6,p {
 // proyects
 .containerVideo{
   display: none;
-  @include responsive(576px){
+  @include responsive(map-get($media, mobile)){
     display: block;
   }
-  @include responsive(992px){
+  @include responsive(map-get($media, desktop)){
     width: 50%;
   }
 }

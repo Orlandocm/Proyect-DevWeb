@@ -1,3 +1,10 @@
+@import './variables';
+$media: (
+  mobile: 576px,
+  tablet:768px,
+  desktop: 992px
+);
+
 @mixin flex($direction,$wrap,$just,$align){
   display: flex;
   flex-flow: $direction $wrap ;
@@ -5,7 +12,7 @@
   align-items: $align;
 }
 
-@mixin responsive ($medida: 576px){
+@mixin responsive ($medida: map-get($media, mobile)){
  @media screen and (min-width: $medida) {
   @content;
  }

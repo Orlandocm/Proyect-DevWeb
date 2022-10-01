@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6, p {
       .contents_2 .text1 {
         max-width: 600px;
         font-size: 1.2rem; } }
-    @media screen and (min-width: 990px) {
+    @media screen and (min-width: 992px) {
       .contents_2 .text1 {
         height: 300px;
         margin-top: 40px; } }
@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6, p {
       .contents_2 .text2 {
         max-width: 600px;
         font-size: 1.2rem; } }
-    @media screen and (min-width: 990px) {
+    @media screen and (min-width: 992px) {
       .contents_2 .text2 {
         height: 300px; } }
 

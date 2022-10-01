@@ -1,0 +1,1 @@
+Cambien todos los textos alternativos del atibuto alt de las imagenes asi me ayuda con el posicionamiento en Todas las paginas tienen un solo h1 para que sea más facil parea el buscador, Las descripciones en todas las paginas cuentas con datos diferentes referentes a la pag web.
