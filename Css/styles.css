@@ -61,8 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
       text-align: left;
       margin: 3rem 0 0 20px; }
       .contents p {
-        margin-left: 20px;
-        z-index: 1; } }
+        margin-left: 20px; } }
 
 .cardsArea {
   max-width: 575px;
@@ -257,19 +256,20 @@ h1, h2, h3, h4, h5, h6, p {
       .contents_2 .text2 {
         height: 300px; } }
 
-.cardsProyects .proyectButton {
+.cardsProyects .proyectButton, .servicesCard .proyectButton {
   background-color: #cff8be;
   color: #676077;
   font-weight: bold;
   font-family: "Courgette", cursive;
   border: 1px solid #d9c8e2; }
-  .cardsProyects .proyectButton:hover {
-    background-color: #849bff;
-    color: #cff8be; }
 
-.cardsProyects .animation {
+.cardsProyects .hoverRepeat:hover, .servicesCard .hoverRepeat:hover {
+  background-color: #849bff;
+  color: #cff8be; }
+
+.cardsProyects .animation, .servicesCard .animation {
   transition: all ease .5s; }
-  .cardsProyects .animation:hover {
+  .cardsProyects .animation:hover, .servicesCard .animation:hover {
     transform: translatex(20px); }
 
 .cardsAreaAbout {
@@ -345,15 +345,12 @@ h1, h2, h3, h4, h5, h6, p {
   color: #676077; }
 
 .servicesCard .servicesButton {
-  transform: translate(50px, 35px);
   background-color: #cff8be;
   color: #676077;
   font-weight: bold;
   font-family: "Courgette", cursive;
-  border: 1px solid #d9c8e2; }
-  .servicesCard .servicesButton:hover {
-    background-color: #849bff;
-    color: #cff8be; }
+  border: 1px solid #d9c8e2;
+  transform: translate(50px, 35px); }
 
 .servicesCard .servicesAnimated {
   transition: all ease .5s; }
@@ -368,3 +365,34 @@ h1, h2, h3, h4, h5, h6, p {
   @media screen and (min-width: 992px) {
     .containerVideo {
       width: 50%; } }
+
+.boxContaier {
+  display: grid;
+  grid-template-rows: 18rem,18rem;
+  grid-template-areas: "columns1"  "columns2";
+  justify-content: center; }
+  @media screen and (min-width: 992px) {
+    .boxContaier {
+      grid-template-columns: repeat(2, 38rem);
+      align-items: center;
+      column-gap: 5px; } }
+  .boxContaier .info {
+    margin-top: 2rem;
+    grid-area: columns1; }
+    .boxContaier .info p {
+      margin-top: 1rem;
+      text-align: justify;
+      height: auto; }
+    .boxContaier .info h1 {
+      text-align: center;
+      height: auto; }
+  .boxContaier .button404 {
+    margin-bottom: 10px;
+    background-color: #cff8be;
+    color: #676077;
+    font-weight: bold;
+    font-family: "Courgette", cursive;
+    border: 1px solid #d9c8e2; }
+    .boxContaier .button404:hover {
+      background-color: #849bff;
+      color: #cff8be; }

@@ -437,16 +437,15 @@ h1,h2,h3,h4,h5,h6,p {
 
 // services
 .servicesCard{
+  @extend .cardsProyects;
   .servicesButton{
-    transform: translate(50px, 35px);
     background-color: $backGround;
     color: $lettersColor;
     font-weight: bold;
     font-family: $fontTitle;
     border: 1px solid $backgroundColor;
+    transform: translate(50px, 35px);
   }
-  @extend .hoverRepeat;
-  
   .servicesAnimated{
     transition: all ease .5s;
     &:hover{
@@ -465,4 +464,43 @@ h1,h2,h3,h4,h5,h6,p {
   }
 }
 
+//404
+.boxContaier{
+  display: grid;
+  grid-template-rows: 18rem,18rem;
+  grid-template-areas: 
+  "columns1" 
+  "columns2";
+  justify-content: center;
+  @include responsive(map-get($media,desktop)){
+    grid-template-columns: repeat(2,38rem);
+    align-items: center;
+    column-gap: 5px;
+  }
+  .info{
+    p {
+      margin-top: 1rem;
+      text-align: justify;
+      height: auto;
+    }
+    h1{
+      text-align: center;
+      height: auto;
+    }
+    margin-top: 2rem;
+    grid-area: columns1;
+  }
+  .button404{
+    margin-bottom: 10px;
+      background-color: $backGround;
+      color: $lettersColor;
+      font-weight: bold;
+      font-family: $fontTitle;
+      border: 1px solid $backgroundColor;
+      &:hover{
+        background-color:$first-Color;
+        color: $backGround;
+      }
+    }
+}
 
